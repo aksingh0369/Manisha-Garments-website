@@ -1,0 +1,6 @@
+{
+  "name": "Manisha Garments",
+  "description": "Premium Indian ethnic fashion store offering sarees, lehengas, festive wear, gents and kids collections for weddings, celebrations and everyday grace.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

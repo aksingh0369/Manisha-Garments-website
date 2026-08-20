@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #F8F4EC;
+    --bg-secondary: #E9DED0;
+    --brand-maroon: #651F29;
+    --brand-gold: #B59658;
+    --brand-gold-light: #D4AF37;
+    --text-dark: #171414;
+    --text-muted: #6F6660;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #F8F4EC;
+    color: #171414;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif-luxury {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+
+  .font-brand {
+    font-family: 'Cinzel', 'Cormorant Garamond', serif;
+    letter-spacing: 0.08em;
+  }
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F8F4EC;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D8CEBE;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #651F29;
+}
+
+/* Luxury text gold shimmer effect */
+@keyframes subtleShimmer {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #8B6B2B 0%, #B59658 50%, #8B6B2B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Aspect ratios for fashion portraits */
+.aspect-fashion {
+  aspect-ratio: 3 / 4;
+}
+
+.aspect-editorial {
+  aspect-ratio: 4 / 5;
+}
+
+.aspect-landscape-banner {
+  aspect-ratio: 16 / 7;
+}
